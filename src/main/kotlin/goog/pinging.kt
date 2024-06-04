@@ -6,7 +6,9 @@ import java.io.InputStreamReader
 
 fun pinging() {
     val rt = Runtime.getRuntime()
-    val commands = arrayOf("ping", "-c 5", "95.217.4.246")
+    println("What ip/address would you like to ping?")
+    val optionalip = readln()
+    val commands = arrayOf("ping", "-c 5", optionalip)
     val proc = rt.exec(commands)
 
     val stdInput = BufferedReader(InputStreamReader(proc.inputStream))
@@ -15,7 +17,8 @@ fun pinging() {
 
 
 // Read the output from the command
-    println("Here is the standard output of the command:\n")
+    val aerial = commands.contentToString()
+    println("Here is the standard output of the command [command, arguments, ip/address] $aerial:\n")
     var s: String? = null
     while ((stdInput.readLine().also { s = it }) != null) {
         println(s)

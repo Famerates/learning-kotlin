@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.famerates"
-version = "1.2-SNAPSHOT"
+version = "1.2.1"
 
 repositories {
     mavenCentral()
