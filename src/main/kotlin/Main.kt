@@ -1,24 +1,25 @@
 package com.famerates
 import com.famerates.goog.elasticityValues
-import com.famerates.goog.perunantti
+import com.famerates.goog.useless
 import com.famerates.goog.pinging
 import kotlin.system.exitProcess
 
 
 fun main() {
-    println("Which feature would you like to use? [1] Perunantti, [2] Pinging, [3] elasticity calculation")
-    val kakkeli = readln().toIntOrNull()
-    if (kakkeli == 1) {
-        perunantti()
+    println("Which feature would you like to use? [1] Useless things, [2] Pinging, [3] elasticity calculation")
+    val inputA = readln()
+    val inputC = inputA.toIntOrNull()
+    if (inputC == 1) {
+        useless()
     }
-    if (kakkeli == 2) {
+    else if (inputC == 2) {
         pinging()
     }
-    if (kakkeli == 3) {
+    else if (inputC == 3) {
         elasticityValues()
     }
     else {
-        exitProcess(status = 1)
+        println("unknown option: $inputA")
     }
     exitProcess(status = 0)
 }
