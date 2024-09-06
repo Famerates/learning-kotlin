@@ -1,6 +1,6 @@
 package com.famerates.goog
 
-fun jimmy(){
+fun skyblockOrNot(){
     val status: String?
     val possibleLocations = arrayOf("home", "out")
     val determine = (0..1).random()
