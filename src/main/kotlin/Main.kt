@@ -12,7 +12,7 @@ fun main() {
         "elasticity" -> elasticityValues()
         "bacon" -> unlimitedBacon()
         "coinflip" -> skyblockOrNot()
-    //    "math" -> mathQuiz()
+        "math" -> mathQuiz()
         "help" -> {
             print("${features.featurearray}\n")
             return main()
