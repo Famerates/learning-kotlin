@@ -3,28 +3,21 @@ import com.famerates.goog.*
 import kotlin.system.exitProcess
 
 fun main() {
-    println("Which feature would you like to use? [1] Useless things, [2] Pinging, [3] elasticity calculation, [4] would you rather, [5] skyblock or not?")
+    println("Which feature would you like to use? (type 'help' for feature list): ")
     val inputA = readln()
-    val inputC = inputA.toIntOrNull()
-    when (inputC) {
-        1 -> {
-            useless()
+    val features = Featurelist()
+    when (inputA) {
+        "useless" -> useless()
+        "ping" -> pinging()
+        "elasticity" -> elasticityValues()
+        "bacon" -> unlimitedBacon()
+        "coinflip" -> skyblockOrNot()
+    //    "math" -> mathQuiz()
+        "help" -> {
+            print("${features.featurearray}\n")
+            return main()
         }
-        2 -> {
-            pinging()
-        }
-        3 -> {
-            elasticityValues()
-        }
-        4 -> {
-            unlimitedBacon()
-        }
-        5 -> {
-            skyblockOrNot()
-        }
-        else -> {
-            println("unknown option: $inputA")
-        }
+        else -> println("unknown option: $inputA")
     }
     exitProcess(status = 0)
 }
