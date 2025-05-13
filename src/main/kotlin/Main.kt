@@ -5,7 +5,6 @@ import kotlin.system.exitProcess
 fun main() {
     println("Which feature would you like to use? (type 'help' for feature list): ")
     val inputA = readln()
-    val features = Featurelist()
     when (inputA) {
         "useless" -> useless()
         "ping" -> pinging()
@@ -13,10 +12,7 @@ fun main() {
         "bacon" -> unlimitedBacon()
         "coinflip" -> skyblockOrNot()
         "math" -> mathQuiz()
-        "help" -> {
-            print("${features.featurearray}\n")
-            return main()
-        }
+        "help" -> featureList()
         else -> println("unknown option: $inputA")
     }
     exitProcess(status = 0)
