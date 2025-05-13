@@ -5,7 +5,7 @@ import com.famerates.main
 data class HelpItem(val command: String, val explanation: String)
 
 fun featureList() {
-    var helpList = arrayListOf(
+    val helpList = arrayListOf(
         HelpItem("useless", "prints useless stuff to the terminal"),
         HelpItem("ping", "pinging feature"),
         HelpItem("elasticity", "elasticity calculation"),

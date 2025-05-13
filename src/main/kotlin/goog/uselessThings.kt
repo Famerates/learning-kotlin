@@ -1,6 +1,6 @@
 package com.famerates.goog
 
-fun useless() {
+fun uselessThings() {
     val c1 = Uselessvalues()
 
     println("Number of moons that earth has: ${c1.moonsofearth}")

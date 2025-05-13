@@ -6,7 +6,7 @@ fun main() {
     println("Which feature would you like to use? (type 'help' for feature list): ")
     val inputA = readln()
     when (inputA) {
-        "useless" -> useless()
+        "useless" -> uselessThings()
         "ping" -> pinging()
         "elasticity" -> elasticityValues()
         "bacon" -> unlimitedBacon()
