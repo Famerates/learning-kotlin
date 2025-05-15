@@ -4,7 +4,7 @@ import kotlin.system.exitProcess
 
 fun main() {
     println("Which feature would you like to use? (type 'help' for feature list): ")
-    val inputA = readln()
+    val inputA = readln().lowercase()
     when (inputA) {
         "useless" -> uselessThings()
         "ping" -> pinging()
