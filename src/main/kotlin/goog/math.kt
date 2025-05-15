@@ -1,13 +1,11 @@
 package com.famerates.goog
 import kotlin.random.Random
-import kotlin.random.nextInt
-
 
 fun mathQuiz() {
     // TODO timer
     println("This is a 5 question math quiz")
 
-    for (i in 1..5) {
+    repeat(5) {
         val num1 = Random.nextInt(1,10)
         val num2 = Random.nextInt(1,10)
         var num3 = 0
