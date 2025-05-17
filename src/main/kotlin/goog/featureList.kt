@@ -10,8 +10,8 @@ fun featureList() {
         HelpItem("ping", "pinging feature"),
         HelpItem("elasticity", "elasticity calculation"),
         HelpItem("bacon", "bacon question"),
-        HelpItem("coinflip", "whether you should play skyblock or not"),
         HelpItem("math", "math quiz")
+        HelpItem("coinflip", "heads or tails"),
     )
     val maxCommandLength = helpList.maxOfOrNull { it.command.length } ?: 0
     val spacing = 3
