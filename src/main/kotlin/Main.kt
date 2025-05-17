@@ -13,7 +13,8 @@ fun main() {
         "coinflip" -> coinFlip()
         "math" -> mathQuiz()
         "help" -> featureList()
+        "exit", -> exitProcess(status = 0)
         else -> println("unknown option: $inputA")
     }
-    exitProcess(status = 0)
+    return main()
 }
