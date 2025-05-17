@@ -10,10 +10,11 @@ fun main() {
         "ping" -> pinging()
         "elasticity" -> elasticityValues()
         "bacon" -> unlimitedBacon()
-        "coinflip" -> skyblockOrNot()
+        "coinflip" -> coinFlip()
         "math" -> mathQuiz()
         "help" -> featureList()
+        "exit", -> exitProcess(status = 0)
         else -> println("unknown option: $inputA")
     }
-    exitProcess(status = 0)
+    return main()
 }
